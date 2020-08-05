@@ -1,0 +1,228 @@
+/* BASIC SETTING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  color: #000;
+  text-rendering: optimizeLegibility;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+/* REUSABLE */
+.row {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* HEADER */
+header {
+  height: 78px;
+}
+
+h1 {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  position: relative;
+}
+
+.gnb {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.gnb li {
+  float: left;
+  margin-left: 10px;
+  padding-left: 10px;
+  background-image: url(resources/img/line.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.gnb li:first-child {
+  background: none;
+}
+
+.gnb a {
+  color: rgb(31, 31, 31);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+/* BANNER SECTION */
+.banner {
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider {
+  height: 100%;
+}
+
+.slider li {
+  height: 100%;
+  position: relative;
+}
+
+.slider img{
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* COMPANY INFO SECTION */
+.company-info {
+  padding: 40px 0;
+  text-align: center;
+  overflow: auto;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: #b3917c;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h2 span {
+  font-weight: 700;
+}
+
+.info-box {
+  float: left;
+  width: 326px;
+}
+
+.info-box img {
+  margin-bottom: 14px;
+}
+
+.info-box h3 {
+  font-size: 1.5em;
+  margin-bottom: 3px;
+}
+
+.info-box p {
+  font-size: 1em;
+}
+
+/* MEDIA SECTION */
+.media {
+  padding: 40px 0;
+  text-align: center;
+  background-image: url(resources/img/main.jpg);
+  /* overflow: auto; */
+}
+
+iframe {
+  float: left;
+}
+
+.thumbnails {
+  float: left;
+  margin-left: 15px;
+}
+
+.thumbnails li {
+  float: left;
+  width: 157px;
+  height: 130px;
+  overflow: hidden;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.thumbnails img {
+  height: 100%;
+}
+
+/* FOOTER */
+footer {
+  background: #171717;
+  color: #fff;
+  padding: 40px 0;
+  overflow: auto;
+}
+
+h4 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #b3917c;
+  margin-bottom: 10px;
+}
+
+.contact-box {
+  float: left;
+  width: 326px;
+}
+
+em {
+  font-style: normal;
+  color: yellow;
+}
+
+.contact-box p {
+  font-size: 1.5em;
+}
+
+address {
+  font-style: normal;
+}
+
+.contact-box a {
+  color: #fff
+}
+
+a[href="tel:1899-5685"] {
+  font-size: 1.5em;
+}
+
+.contact-box p:nth-child(4) {
+  margin-top: 20px;
+}
+
+.contact-box address:last-child,
+.contact-box address:last-child a {
+  color: #ababab;
+}
+
+.news li {
+  width: 70%;
+  margin-bottom: 5px;
+  white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.sns li {
+  float: left;
+  margin: 0 15px;
+}
