@@ -1,0 +1,157 @@
+/* BASIC STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* REUSABLE */
+.wrap {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/****************** HEADER ******************/
+
+/* TOP */
+.top {
+  height: 45px;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.top_link > ul > li {
+  float: left;
+  height: 45px;
+  border: 1px solid #E0E0E0;
+}
+
+.top_link > ul > li:first-child {
+  border-bottom: 1px solid #768CFF;
+}
+
+.top > .wrap {
+  position: relative;
+}
+
+.util {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.util > ul > li {
+  float: left;
+  margin-left: 15px;
+  font-size: 0;
+  position: relative;
+}
+
+.util > ul > li::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+  width: 1px;
+  height: 12px;
+  background-color: #E0E0E0;
+}
+
+.util > ul > li:first-child::before {
+  content: none;
+}
+
+.util > ul > li > a {
+  color: #8B8B8B;
+  font-size: 12px;
+}
+
+/* MIDDLE */
+.middle {
+  width: 600px;
+  margin: 21px auto;
+}
+
+h1 {
+  float: left;
+}
+
+.search-bar {
+  float: left;
+  width: 390px;
+  border: 3px solid #76BAB8;
+  border-radius: 100px;
+  height: 40px;
+  margin-left: 18px;
+  margin-top: 14px;
+  padding-top: 4px;
+}
+
+#search-category {
+  float: left;
+  width: 85px;
+  height: 26px;
+  border: none;
+  margin-left: 10px;
+  font-size: 11px;
+  color: #666;
+}
+
+.search-box {
+  float: left;
+  width: 246px;
+  height: 26px;
+  border: none;
+  margin-left: 9px;
+}
+
+.serach-box:focus {
+  outline: none;
+}
+
+.ico_search {
+  margin-top: 14px;
+  float: right;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.arrow a:link,
+.arrow a:visited {
+  color: #76BAB8;
+}
+
+/* GNB */
+nav {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  height: 76px;
+  box-sizing: unset;
+}
+
+.gnb {
+  position: relative;
+  top: -1;
+}
+
+.gnb > li {
+  float: left;
+}

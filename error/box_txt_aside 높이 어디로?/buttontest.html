@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  button {
+    padding: 10px 20px;
+    color: orangered;
+    background-color: transparent;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    margin-right: 10px;
+    background: linear-gradient(45deg, #fff 50%, orangered 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, orangered 50%, #fff 50%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  button,
+  button:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s, font-size .2s;
+  }
+
+  button:hover,
+  button:hover::after {
+    background-position: 0;
+    font-size: 1.1em;
+  }
+
+  .test {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: linear-gradient(45deg, #fff 50%, orangered 50%);
+    background-position: 10%;
+    background-size: 300%;
+    transition: 1s;
+    text-align: center;
+    position: relative;
+  }
+
+  .test:hover,
+  .test:hover p {
+    background-position: 100%;
+    opacity: 1;
+  }
+
+  .test p {
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 150%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity .4s;
+    transition-delay: .3s;
+  }
+
+  .test p span {
+    font-size: 0.6em;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  body div:last-of-type {
+    width: 500px;
+    height: 500px;
+    /* line-height: 500px; */
+    padding-top: 100px;
+    margin: 0 auto;
+    background-color: #ccc;
+    text-align: center;
+  }
+
+  div:last-of-type a {
+    display: inline-block;
+    text-decoration: none;
+    color: orangered;
+    width: 108px;
+    height: 41px;
+    line-height: 41px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .some p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 41px;
+    overflow: hidden;
+    transition: all .5s linear;
+  }
+
+  .some:hover p {
+    width: 100%;
+  }
+
+  .some span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 108px;
+    height: 41px;
+    line-height: 41px;
+    background-color: orangered;
+    color: #fff;
+  }
+  
+</style>
+
+<body>
+  <div>
+    <button>CLICK ME</button>
+    <button>CLICK ME</button>
+    <button>CLICK ME</button>
+  </div>
+  <div class="test">
+    <p>
+      Hello,<br>welcome to the united states<br>Wonkook!
+    </p>
+  </div>
+  <div class="test">
+    <p>
+      Case Was<br>Approved<br>
+      <span>
+        On September 15, 2020, we approved<br>your Form I-129, Petition for a<br>Nonimmigrant Worker, Reciept
+      </span>
+    </p>
+  </div>
+  <div>
+    <a class="some" href="#">
+      CLICK ME
+      <p>
+        <span>CLICK ME</span>
+      </p>
+    </a>
+  </div>
+</body>
+
+</html>

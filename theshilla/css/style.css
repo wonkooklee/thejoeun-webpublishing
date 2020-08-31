@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: top;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/******* HEADER *******/
+
+header {
+  background-color: #F3E2C6;
+  height: 90px;
+}
+
+header > .wrap {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-fn {
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.main-fn li {
+  float: left;
+}
+
+.gnb {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.gnb li {
+  float: left;
+  margin-left: 47px;
+}
+
+.util {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.util li {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+
+.util li::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  right: -10px;
+  top: 4px;
+  background-color: #ccc;
+}
+
+.util li:last-child::after {
+  content: none;
+}
+
+.lang {
+  background-image: url(../img/globalBox.gif);
+  background-position: center;
+  width: 98px;
+  padding-left: 28px;
+}
+
+.util li a {
+  color: #856f56;
+  font-size: 12px;
+}
+
+
+/******* MAIN BANNER *******/
+.main_bn {
+  height: 650px;
+  background-image: url(../img/mainVisual.jpg);
+  background-position: center;
+  position: relative;
+}
+
+.slide_arr {
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img_crop img {
+  vertical-align: top;
+}
+
+.img_crop {
+  width: 25px;
+  overflow: hidden;
+}
+
+.img_crop:first-child {
+  float: left;
+}
+
+.img_crop:last-child {
+  transform: rotate(180deg);
+  float: right;
+}
+
+
+/******* RESERVATION BAR *******/
+.reservation_bar {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.wrap2 {
+  width: 1200px;
+  height: 79px;
+  margin: 0 auto;
+  background-color: #EAEAEA;
+  padding: 15px 0;
+}
+
+.reservation_bar ul {
+  width: 900px;
+  margin-left: 50px;
+  margin-top: 15px;
+  overflow: hidden;
+  float: left;
+}
+
+.reservation_bar ul li {
+  float: left;
+  margin-right: 31px;
+  color: #444;
+  font-weight: 700;
+  height: 23px;
+  position: relative;
+}
+
+.reservation_bar ul > li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  top: -2px;
+  left: -14px;
+}
+
+.reservation_bar ul li a {
+  color: #444;
+}
+
+.btn_serach {}
+
+.sel_hotel {
+}
+
+.sel_hotel a {
+  display: block;
+  width: 190px;
+  background-image: url(../img/bg_Select.gif);
+  background-position: right;
+}
+
+.btn_checkin {
+  width: 133px;
+}
+
+.btn_checkin img {
+  float: right;
+}
+
+.btn_checkout {
+  width: 133px;
+}
+
+.btn_checkout img {
+  float: right;
+}
+
+.reservation_bar ul .reservation_tip {
+  margin-right: 0;
+}
+
+.guest {
+  width: 80px;
+  background-image: url(../img/bg_Select.gif);
+  background-position: right;
+}
+
+.guest a {
+  display: inline-block;
+  width: 100%;
+}
+
+.btn_search {
+  float: right;
+  margin-top: 2px;
+  margin-right: 80px;
+  width: 150px;
+  height: 44px;
+  background-color: #3E2B2C;
+  text-align: center;
+  line-height: 48px;
+}
+
+.btn_search a {
+  display: block;
+  color: #fff;
+}
+
+
+/******* SECTION S1 *******/
+.s1 {
+  text-align: center;
+  padding: 90px 0 140px;
+}
+
+.s1 h2 {
+  margin-bottom: 50px;
+}
+
+.s1_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.left-box {
+  float: left;
+  margin-right: 21px;
+}
+
+.box1 {
+  width: 793px;
+  height: 360px;
+  background-image: url(../img/img_special01.jpg);
+  margin-bottom: 21px;
+}
+.box2 {
+  float: left;
+  width: 386px;
+  height: 260px;
+  background-image: url(../img/img_special02.jpg);
+}
+.box3 {
+  float: right;
+  margin-left: ;
+  width: 386px;
+  height: 260px;
+  background-image: url(../img/img_special03.jpg);
+}
+
+.right-box {
+  float: left;
+}
+
+.box4 {
+  width: 386px;
+  height: 260px;
+  background-image: url(../img/img_special04.jpg);
+  margin-bottom: 21px;
+}
+.box5 {
+  width: 386px;
+  height: 360px;
+  background-image: url(../img/img_special05.jpg);
+}
+
+.spe-offer a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+/******* SECTION REWARDS *******/
+.rewards {
+  height: 360px;
+  background-color: #f6f6f6;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.rewards h2 {
+  margin-bottom: 50px;
+}
+
+.content {
+  position: relative;
+}
+
+.rewards ul {
+  width: 80%;
+}
+
+.rewards ul li {
+  float: left;
+  margin-right: 91px;
+  position: relative;
+}
+
+.rewards ul li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -45px;
+  width: 1px;
+  height: 46px;
+  background-color: #ccc;
+}
+
+.rewards ul li:last-child::after {
+  content: none;
+}
+
+.rewards ul li a {}
+.rewards ul li a img {}
+
+.rw_txt {
+  width: 724px;
+  height: 42px;
+  background-image: url(../img/rwBenefit.gif);
+  margin-top: 40px;
+  position: relative;
+}
+
+.rw_txt a {
+  position: absolute;
+  top: 22px;
+  right: 141px;
+}
+
+.rewards_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 211px;
+  height: 135px;
+  background-image: url(../img/rwCard.png);
+}
+
+.btn_rwjoin {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 113px;
+  height: 34px;
+  line-height: 34px;
+  background-color: #3E2B2C;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+/******* GALLERY *******/
+.gallery {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+}
+
+
+/******* FOOTER *******/
+footer {
+}
+
+.what {
+  background-color: #F1EBD6;
+}
+
+footer .wrap {
+  position: relative;
+}
+
+.upper {
+  height: 133px;
+}
+
+.upper > div {
+  float: left;
+}
+
+.upper_right {
+  width: 970px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px;
+}
+
+.brand_logo li {
+  float: left;
+}
+
+.brand_logo li:first-child {
+  width: 161px;
+  height: 68px;
+  background-image: url(../img/brandTit.gif);
+  background-position: top;
+}
+
+.brand_logo li:first-child:hover {
+  background-position: 0 -70px;
+  background-repeat: no-repeat;
+}
+
+.brand_logo li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sitemap {
+}
+
+.sitemap ul {
+}
+
+.sitemap > .mola > li {
+  float: left;
+  margin-right: 31px;
+}
+
+.sitemap > .mola > li > a {
+  font-size: 14px;
+  color: #9D8E78;
+}
+
+.sitemap > .mola li:nth-last-child(3) a,
+.sitemap > .mola li:nth-last-child(2) a,
+.sitemap > .mola li:last-child a {
+  color: #333;
+}
+
+.sns {
+  width: 120px;
+  height: 23px;
+  background-image: url(../img/localBoxSnsNews.gif);
+  background-position: -21px -61px;
+  position: absolute;
+  right: 0;
+  top: 89px;
+}
+
+.sns > li {
+  float: left;
+  margin-left: 5px;
+}
+
+.sns li a {
+  display: block;
+  width: 23px;
+  height: 23px;
+}
+
+.legal-info {
+  overflow: hidden;
+  padding: 24px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.legal-info li {
+  position: relative;
+  float: left;
+  margin-right: 31px;
+}
+
+.legal-info li::after {
+  content: '';
+  width: 1px;
+  height: 12px;
+  background-color: #adadad;
+  position: absolute;
+  top: 3px;
+  right: -15px;
+}
+
+.legal-info li:last-child::after {
+  content: none;
+}
+
+.legal-info li a {
+  font-size: 14px;
+  color: #adadad;
+}
+
+.legal-info li:first-child a {
+  color: #333;
+}
+
+.legal-info li:nth-child(2) a {
+  color: #856f56;
+}
+
+.lower address {
+  overflow: hidden;
+  margin-top: 13px;
+  height: 49px;
+}
